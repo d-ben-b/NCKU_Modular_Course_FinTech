@@ -69,13 +69,13 @@ router.beforeEach(async (to, from, next) => {
       next()
       return
     } else {
-      window.location.href = 'http://localhost:5173'
+      window.location.href = 'https://ncku-modular-course-fin-tech.vercel.app/'
     }
   } catch (error) {
     console.error('Token validation failed:', error)
 
     // Token 驗證失敗，重定向到登入頁面
-    window.location.href = 'http://localhost:5173'
+    window.location.href = 'https://ncku-modular-course-fin-tech-login.vercel.app/'
   }
 })
 
